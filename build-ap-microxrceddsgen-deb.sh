@@ -1,5 +1,11 @@
 #!/bin/sh
-VERSION="0.0.1"
+
+if [ -z "$1" ]; then
+  echo "Usage: $0 <version>"
+  exit 1
+fi
+
+VERSION="$1"
 
 echo "Copying launcher"
 cp scripts/microxrceddsgen ap-microxrceddsgen/opt/ardupilot/Micro-XRCE-DDS-Gen/bin/microxrceddsgen
