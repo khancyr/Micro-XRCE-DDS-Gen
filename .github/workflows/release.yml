@@ -58,7 +58,7 @@ jobs:
         run: |
           cd src/microxrceddsgen
           rm -rf .github
-          ./build-ap-microxrceddsgen-deb.sh ${{ needs.get-ref-name.outputs.ref_name }}
+          ./build-ap-microxrceddsgen-deb.bash ${{ needs.get-ref-name.outputs.ref_name }}
 
       - name: "Publish to GitHub"
         uses: softprops/action-gh-release@v2
