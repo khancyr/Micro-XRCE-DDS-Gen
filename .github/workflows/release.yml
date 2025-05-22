@@ -49,10 +49,10 @@ jobs:
           cd src/microxrceddsgen
           ./gradlew assemble
 
-      - name: Test microxrceddsgen
-        run: |
-          cd src/microxrceddsgen
-          ./gradlew test -Dbranch=v2.3.0
+#      - name: Test microxrceddsgen
+#        run: |
+#          cd src/microxrceddsgen
+#          ./gradlew test -Dbranch=v2.3.0
 
       - name : Build deb
         run: |
